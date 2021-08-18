@@ -3,8 +3,8 @@
 body{
     font-family: nunito-sans, sans-serif;
     font-weight: 300;
-    color: #fafafa;
-    background-color: #401801;
+    color: black;
+    background-color: #fafafa;
     margin: 0;
     padding: 0;
     border: none;
@@ -15,7 +15,7 @@ p{
 }
 /* header and links */
 header{
-    background-color: #401801;
+    background-color: #fafafa;
     width: 100%;
     height: 100px;
     text-align: center;
@@ -24,7 +24,7 @@ header{
     margin: 0;
     padding: 0;
     border: none;
-    color: #fafafa;
+    color: black;
     
 }
 nav > ul > li{
@@ -40,8 +40,11 @@ nav a{
     text-decoration: none;
 }
 nav a:hover{
-    background-color: #fafafa;
-    color: #401801;
+    background-color: black;
+    color: #fafafa;
+}
+.active{
+    border-bottom: 2px solid black;
 }
 header h1{
     width: 100%;
@@ -67,9 +70,7 @@ header h1{
     height: 100px; 
     position: absolute;
 }
-.active{
-    border-bottom: 2px solid #fafafa;
-}
+
 /* hero image and surrounding images and covers*/
 #hero{
     background: url(/assets/images/meat\ cuts.jpeg) no-repeat center center;
@@ -80,44 +81,174 @@ header h1{
     padding: 0;
     margin: 0;
     z-index: 1;
+    
 }
-/* cover text */
-#cover-text-1{
+/* cover text and images*/
+
+/* cover text heading */
+#cover-text-heading{
     width: auto;
     height: auto;
     border-radius: 25px 0;
     top: 100px;
-    left: 250px;  
+    left: 250px; 
+    position: absolute; 
+    border: 2px solid black;
+    text-align: center;
+    
+    background-color: rgba(65, 64, 64, 0.8);
+    color: #fafafa;
+    z-index: 3; 
 }
-#cover-text-2{
-    width: 250px;
-    height: 12%;
+/*lamb*/
+#cover-image-lamb{
+    border-radius: 25px 0;       
+    top: 750px;
+    right: 50px;  
+    background-repeat:no-repeat; 
+    overflow: hidden;
+    
+}
+#cover-image-lamb-cuts{
+    border-radius: 25px 0;    
+    background-repeat: no-repeat;  
+    top: 750px;
+    left: 50px;    
+}
+#cover-text-lamb{
+    width: 800px;
+    height: auto;
     border-radius: 25px 0;
-    top: 375px;
-    left: 300px;  
+    top: 840px;
+    left: 250px;      
 }
-#cover-text-3{
-    width: 250px;
-    height: 12%;
+#lamb{
+    text-align: center;
+}
+.lamb-hr-left{
+    position: absolute;
+    left: 150px;
+}
+.lamb-hr-right{
+    position: absolute;
+    right: 150px;
+    top: 718px;
+}
+/* poultry */
+#poultry-image{
+    border-radius: 0 25px;
+    background-repeat: no-repeat;
+    top: 1050px;
+    left: 50px;
+    overflow: hidden;
+}
+#poultry-cuts{
+    border-radius: 25px 0;    
+    background-repeat: no-repeat;  
+    top: 1100px;
+    right: 50px;  
+    position: absolute;  
+}
+#cover-text-poultry{
+    width: 750px;
+    height: auto;
+    border-radius:0 25px ;
+    top: 1130px;
+    left: 480px;  
+}
+#poultry{
+    text-align: center;
+    position: absolute;
+    top: 967px;
+    left: 675px;
+}
+.poultry-hr-left{
+    position: absolute;
+    left: 150px;
+    top: 1018px;
+}
+.poultry-hr-right{
+    position: absolute;
+    right: 150px;
+    top: 1018px;
+}
+/*beef*/
+#cover-image-beef{
+    border-radius: 0 25px;   
+    background: url(/assets/images/cows.jpeg) no-repeat center center ;
+    top: 1350px;
+    right: 50px;    
+}
+#beef-cuts{
+    border-radius: 25px 0;    
+    background-repeat: no-repeat;  
+    top: 1380px;
+    left: 50px;  
+    position: absolute;  
+}
+#cover-text-beef{
+    width: 800px;
+    height: auto;
     border-radius: 25px 0;
-    top: 600px;
-    left: 300px;  
+    top: 1450px;
+    left: 250px;      
 }
-#cover-text-4{
-    width: 250px;
-    height: 12%;
+#beef{
+    text-align: center;
+    position: absolute;
+    top: 1273px;
+    left: 675px;
+}
+.beef-hr-left{
+    position: absolute;
+    left: 150px;
+    top: 1325px;
+}
+.beef-hr-right{
+    position: absolute;
+    right: 150px;
+    top: 1325px;
+}
+/* pork */
+#pork-image{
+    border-radius: 0 25px;
+    background-repeat: no-repeat;
+    top: 1650px;
+    left: 50px;
+    overflow: hidden;
+}
+#pork-cuts{
+    border-radius: 25px 0;    
+    background-repeat: no-repeat;  
+    top: 1650px;
+    right: 50px;  
+    position: absolute;  
+}
+#cover-text-pork{
+    width: 600px;
+    height: auto;
     border-radius: 25px 0;
-    top: 375px;
-    right: 300px;      
+    top: 1750px;
+    left: 400px;  
 }
-#cover-text-5{
-    width: 250px;
-    height: 12%;
-    border-radius: 25px 0;
-    top: 600px;
-    right: 300px;      
+#pork{
+    text-align: center;
+    position: absolute;
+    top: 1573px;
+    left: 675px;
 }
-#cover-text-1, #cover-text-2, #cover-text-3,#cover-text-4, #cover-text-5{
+.pork-hr-left{
+    position: absolute;
+    left: 150px;
+    top: 1625px;
+}
+.pork-hr-right{
+    position: absolute;
+    right: 150px;
+    top: 1625px;
+}
+/* communal styles */
+#cover-text-poultry, #cover-text-pork,#cover-text-beef, #cover-text-lamb{
     border: 2px solid black;
     text-align: center;
     position: absolute;
@@ -125,43 +256,19 @@ header h1{
     color: #fafafa;
     z-index: 3;  
 }
-
-/* cover images */
-#cover-image-1{
-    border-radius: 0 25px;
-    float: left;
-    background: url(/assets/images/chickens\ 1.jpeg) no-repeat center center ;
-    top: 125px;
-    left: 0px;
-}
-#cover-image-2{
-    border-radius: 0 25px;   
-    float: left;
-    background: url(/assets/images/pigs\ 1.jpeg) no-repeat center center ;
-    top: 450px;
-    left: 0px;
-}
-#cover-image-3{
-    border-radius: 25px 0;    
-    float: right;
-    background: url(/assets/images/sheep\ 2.jpeg) no-repeat center center ;    
-    top: 450px;
-    right: 0px;    
-}
-#cover-image-4{
-    border-radius: 0 25px;
-    position: absolute;    
-    float: right;
-    background: url(/assets/images/cows\ 2.jpeg) no-repeat center center ;
-    top: 125px;
-    right: 0px;    
-}
-#cover-image-1, #cover-image-2, #cover-image-3, #cover-image-4{
+#poultry-image, #pork-image, #cover-image-lamb, #cover-image-beef{
     width: 450px;
     height: 250px;
-    border: 2px solid #401801;
+    border: 5px solid black;
     position: absolute;
     margin: 0;
     padding: 0;
     z-index: 2;
+
+}
+hr{
+    width: 450px;
+    height: 2px;
+    color: black;
+    background-color: black;
 }
