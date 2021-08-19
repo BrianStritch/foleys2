@@ -73,7 +73,7 @@ header h1{
 
 /* hero image and surrounding images and covers*/
 #hero{
-    background: url(/assets/images/meat\ cuts.jpeg) no-repeat center center;
+    background: url(assets/images/meat\ cuts.jpeg) no-repeat center center;
     width: 100%;
     height: 600px;
     clear: both;
@@ -175,7 +175,7 @@ header h1{
 /*beef*/
 #cover-image-beef{
     border-radius: 0 25px;   
-    background: url(/assets/images/cows.jpeg) no-repeat center center ;
+    background: url(assets/images/cows.jpeg) no-repeat center center ;
     top: 1350px;
     right: 50px;    
 }
