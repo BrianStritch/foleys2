@@ -74,15 +74,23 @@ header h1{
 
 /* hero image and surrounding images and covers*/
 #hero{
-    background: url(/assets/images/meat-cuts.jpeg) no-repeat center center;
+    background-repeat:  no-repeat;
     width: 100%;
     height: 37rem;
-    clear: both;
+    
     border: none;
     padding: 0;
     margin: 0;
-    z-index: 1;
     
+    
+    background-color: pink;
+    
+}
+#hero img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 20%;
 }
 /* cover text and images*/
 
@@ -101,14 +109,14 @@ header h1{
     color: #fafafa;
     z-index: 3; 
 }
-/*lamb*/
+                                        /*lamb*/
 #lamb-section{
     width: 100%;
     height: 51%;
     background-color: yellow;
     position: absolute;
 }
-#cover-image-lamb{
+#lamb-image{
     border-radius: 25px 0;       
     top: 16%;
     right: 1%;  
@@ -116,11 +124,11 @@ header h1{
     overflow: hidden;
     
 }
-#cover-image-lamb img{
+#lamb-image img{
     width: 100%;
     height: 100%;
 }
-#cover-image-lamb-cuts{
+#lamb-cuts{
     border-radius: 25px 0;    
     background-repeat: no-repeat;  
     top: 750px;
@@ -147,7 +155,7 @@ header h1{
     right: 3%;
     top: 7.5%;
 }
-/* poultry */
+                                        /* poultry */
 #poultry-section{
     width: 100%;
     height: 51%;
@@ -193,7 +201,7 @@ header h1{
     right: 3%;
     top: 7.5%;
 }
-/*beef*/
+                                        /*beef*/
 #beef-section{
     width: 100%;
     height: 51%;
@@ -240,7 +248,7 @@ header h1{
     right: 3%;
     top: 7.5%;
 }
-/* pork */
+                                        /* pork */
 #pork-section{
     width: 100%;
     height: 51%;
@@ -297,7 +305,7 @@ header h1{
     color: #fafafa;
     z-index: 3;  
 }
-#poultry-image, #pork-image, #cover-image-lamb, #beef-image{
+#poultry-image, #pork-image, #lamb-image, #beef-image{
     width: 36%;
     height:67%;
     border: 5px solid black;
