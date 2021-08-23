@@ -7,85 +7,76 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Foleys Family Butchers Duleek</title>
     </head>
+
+   
 <body>
     <header> 
         <h1>            
             Foleys family butchers duleek            
-        </h1>
-        <!--
-
+        </h1> 
+        <p>Est.2004</p>   
         
-        <nav>
-            <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="#lamb" class="active">Products</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">contact us</a></li>
-            </ul>
-        </nav>
         
-        -->
+        <!-- potter list -->
 
-                                    <!-- potter list -->
-        <!--Navigation Menu-->
-        <nav id="menu">
+         <!--Navigation Menu-->
+         <nav id="menu">
             <ul>
                <!--Dropdown from W3 school tutorial for dropdown menu - adjusted for this site
                   https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar-->
-               <li><a href="index.html" >Home</a></li>
+               <li><a href="index.html" class="active">Home</a></li>
                <li class="dropdown">
-                  <a href="products-and-about.html" class="dropbtn active">Products and about-us</a>
+                  <a href="products-and-about.html" class="dropbtn">Products and about-us</a>
                   <div class="dropdown-content">
-                     <a href="products-and-about.html#lamb-section">Lamb</a>
-                     <a href="products-and-about.html#poultry-section">Poultry</a>                     
-                     <a href="products-and-about.html#beef-section">Beef</a>
-                     <a href="products-and-about.html#pork-section">Pork</a>
-                  </div>
+                    <a href="products-and-about.html#lamb-section">Lamb</a>
+                    <a href="products-and-about.html#poultry-section">Poultry</a>                     
+                    <a href="products-and-about.html#beef-section">Beef</a>
+                    <a href="products-and-about.html#pork-section">Pork</a>
+                 </div>
+              </li>
+              <li class="dropdown">
+                  <a href="rewards-and-contact.html" class="dropbtn">Rewards and Contact-us</a>
+                   <div class="dropdown-content">
+                       <a href="rewards-and-contact.html#rewards-section">Rewards</a>
+                       <a href="rewards-and-contact.html#contact-section">Contact us</a>
+                   </div>
                </li>
-               <li class="dropdown">
-                   <a href="rewards-and-contact.html">Rewards and Contact-us</a>
-                    <div class="dropdown-content">
-                        <a href="rewards-and-contact.html#rewards-section">Rewards</a>
-                        <a href="rewards-and-contact.html#contact-section">Contact us</a>
-                    </div>
-                </li>
-               
-            </ul>
-         
-        </nav>
+              
+           </ul>
+        
+       </nav>
+    </header>  
 
-                                        <!-- end of potter list -->
-
-
-
-    </header>
                                             <!-- HERO IMAGE SECTION-->
-    <section id="hero-section">
-        <img src="assets/images/meat-cuts.jpeg" alt="image of numerous types of meat cuts">
-        <div id="hero"></div>
-            <div id="cover-text-heading">
+    <div class="hero-section">
+        <section >
+            <img src="assets/images/meat-cuts.jpeg" alt="image of numerous types of meat cuts">
+            <div class="cover-text-heading">
                 <h1>
-                We pride ourselves on having the finest cuts in the county, call in for the cut of your choice today!
+                    We pride ourselves on having the finest cuts in the county, call in for the cut of your choice today!
                 </h1>          
             </div>
-    </section>    
-                                            <!-- LAMB SECTION -->  
-    <section id="lamb-section">                    
-            <div id="lamb-heading">
-                <hr class="lamb-hr-left">
-                <h2 id="lamb"> Organic farmed lamb </h2>
-                <hr class="lamb-hr-right">
+        </section> 
+    </div>
+    
+                                            <!-- LAMB SECTION --> 
+    <div class="lamb-section">
+        <section >                    
+            <div>
+                
+                <h2 id="lamb"><hr class="lamb-hr-left"> Organic farmed lamb <hr class="lamb-hr-right"></h2>
+                
             </div>            
         
-            <div id="lamb-image">
+            <div class="lamb-image">
                 <img src="assets/images/sheep.jpeg" alt="image of sheep in a field">
             </div>
 
-            <div id="lamb-cuts">
+            <div class="lamb-cuts">
                 <img src="assets/images/lamb-cuts.jpeg" alt="illustration showing cuts of lamb on the carcass">
             </div>
 
-            <div id="lamb-description">
+            <div class="lamb-description">
                 <p>
                     We source the finest mountain reared lamb from our specially selected partner farmers who rear 
                     grass fed sheep from the Mountain ranges in Mayo and Galway which results in the most tender of 
@@ -93,6 +84,8 @@
                 </p>              
             </div>         
     </section>
+    </div> 
+    
                                             <!-- POULTRY SECTION -->
     <section id="poultry-section">
             <div id="poultry-heading">
@@ -170,6 +163,29 @@
     </section>
 
 
+    </section>
+
+
+    <!-- footer -->
+    <footer>        
+        <ul class="social-media-links">
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener" 
+                aria-label="Visit our facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com" target="_blank" rel="noopener" 
+                aria-label="Visit our twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a></li>
+            
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener" 
+                aria-label="Visit our instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noopener" 
+                aria-label="Visit our linked-in page (opens in a new tab)"><i class="fab fa-linkedin"></i></i></a></li>
+        </ul>
+        <p>Copyright Foleys duleek 2021 <i class="far fa-copyright"></i></p> 
+    </footer>
+    <script src="https://kit.fontawesome.com/41b937922a.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
         <!--
             We believe that every 
     animal should have the opportunity where possible to explore its own natural 
@@ -177,16 +193,4 @@
 
 
         -->
-
-    
-
-         
-
-        
-        
-        
-        
-    </section>
-    
-</body>
-</html>
+   
