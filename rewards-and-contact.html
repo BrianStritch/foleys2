@@ -39,15 +39,197 @@
            </ul>        
        </nav>
     </header>  
-    <div id="rewards">
-        <h1>REWARDS SUBCRIPTION <i class="fas fa-trophy"></i></h1>
-        <form method="POST" action="https://formdump.codeinstitute.net" class="rewards-form" >
-        <label for="fname" class="form-labels">First Name</label>
-        <input type="text" id="fname" name="first-name" placeholder="first name" class="form-input" required>
-        <label for="lname" class="form-labels">Last Name</label>
-        <input type="text" id="lname" name="last-name" placeholder="last name" class="form-input" required>
+
+    <div id="rewards-form-outer">
+        <form action="https://formdump.codeinstitute.net" method="POST">
+
+            <fieldset class="user-data">
+                <h1>Join our rewards scheme today and become an official member</h1>
+                <span>
+                    <fieldset class="personal-details">
+                        <legend>Your contact details</legend>    
+                        <div>
+                            <label for="full-name">Full name:</label>
+                            <input id="full-name" type="text" name="full_name" placeholder="Full name" required>
+                        </div>                        
+                        <div>
+                            <label for="number">Contact No:</label>
+                            <input id="number" type="tel" name="phone_number" placeholder="Your Contact number" required>
+                        </div>            
+                        <div>
+                            <label for="email-field">Email:</label>
+                            <input id="email-field" type="email" name="email" placeholder="Your email" required>
+                        </div>                    
+                        <div>
+                            <label for="u-name">Username</label>
+                            <input type="text" name="username" id="u-name" placeholder="Type your preferred username" required>                    
+                        </div>
+                        <div>
+                            <label for="pword">Password</label>
+                            <input type="password" name="password" id="pword" placeholder="Password" required>
+                        </div> 
+                        <div>
+                            <label for="verify-password">Verify Password</label>
+                            <input type="password" name="verify-password" id="verify-password" placeholder="Verify password" required>
+                        </div>
+                    </fieldset>
+                </span>
+                <span>
+                    <fieldset class="address">
+                        <legend>Your address</legend>
     
-    </form>
+                        <div>
+                            <label for="house_number">House number:</label>
+                            <input id="house_number" type="number" name="house_number" placeholder="house number" required>
+                        </div>
+                        <div>
+                            <label for="house_name">House name:</label>
+                            <input id="house_name" type="text" name="house_number" placeholder="Optional" >
+                        </div>
+                        <div>
+                            <label for="street-name-1">Street name 1:</label>
+                            <input id="street-name-1" type="text" name="street-name-1" placeholder="Street Name 1" required>
+                        </div>
+                        <div>
+                            <label for="street-name-2">Street name 2:</label>
+                            <input id="street-name-2" type="text" name="street-name-2" placeholder="Street Name 2" required>
+                        </div>                    
+                        <div>
+                            <label for="city">City:</label>
+                            <input id="city" type="text" name="text" placeholder="City" required>
+                        </div>
+                        
+                        <label for="distance">Delivery distance:</label>
+                        <select id="distance" name="delivery" required>
+                            <option value="under-1-mile">Under 1 mile</option>
+                            <option value="2-5_miles">2 - 5 miles</option>
+                            <option value="6-10_miles">6 - 10 miles</option>
+                            <option value="10-20_miles">10-20 miles</option>
+                            <option value="20+_miles">20 + miles</option>                
+                        </select>
+                    </fieldset>
+                </span>
+            </fieldset>
+            <fieldset class="products-and-services">
+                <legend>Products and services</legend>
+                <div>
+                    <label for="pick-meat" class="fav-meat">Choose your favourite type of meat.</label>
+                    <input id="pick-meat"  list="meats" name="favourite-meat" required>
+                    <datalist id="meats">
+                        <option value="Beef">
+                        <option value="Chicken">
+                        <option value="Duck">
+                        <option value="Ham">   
+                        <option value="Lamb">
+                        <option value="Pork"> 
+                        <option value="Turkey">
+                        <option value="Venison">
+                        <option value="Veal">
+                        <option value="Wagyu">    
+                        <option value="Wild-game">                        
+                    </datalist>
+                </div>
+                <div>
+                    <label for="pick-meat" class="least-fav-meat">Choose your least favourite type of meat.</label>
+                    <input id="pick-meat"  list="meats" name="least-favourite-meat" required>
+                    <datalist id="meats">
+                        <option value="Beef">
+                        <option value="Chicken">
+                        <option value="Duck">
+                        <option value="Ham">   
+                        <option value="Lamb">
+                        <option value="Pork"> 
+                        <option value="Turkey">
+                        <option value="Venison">
+                        <option value="Veal">
+                        <option value="Wagyu">    
+                        <option value="Wild-game">                        
+                    </datalist>
+                </div>
+    
+                <p>How often would you eat meat per week?</p>
+    
+                <input id="once-week" name="meat-intake-weekly" value="once-weekly" type="radio" required>
+                <label for="once-week">Once a week</label>
+    
+                <input id="twice-a-week" name="meat-intake-weekly" value="twice-a-week" type="radio" required>
+                <label for="twice-a-week">Twice a week</label>
+    
+                <input id="once-a-fortnight" name="meat-intake-weekly" value="once-a-fortnight" type="radio" required>
+                <label for="once-a-fortnight">Once a fortnight</label>
+    
+                <input id="not-often" name="meat-intake-weekly" value="not-often" type="radio" required>
+                <label for="not-often">Not often</label>
+    
+                <p>How often do you shop for meat products?</p>
+    
+                <input id="once-a-week" name="shopping-frequency" value="once-a-week" type="radio" required>
+                <label for="once-a-week">Once a week</label>
+    
+                <input id="twice-a-week" name="shopping-frequency" value="twice-a-week" type="radio" required>
+                <label for="twice-a-week">Twice a week</label>
+    
+                <input id="once-a-fortnight" name="shopping-frequency" value="once-a-fortnight" type="radio" required>
+                <label for="once-a-fortnight">Once a fortnight</label>
+    
+                <input id="not-often" name="shopping-frequency" value="not-often" type="radio" required>
+                <label for="not-often">Not often</label>
+
+                <p>Delivery options</p>
+
+                <div>
+                        <label for="delivery" class="delivery-list">Prefferred delivery times</label>
+                        <input id="delivery"  list="delivery-options" name="delivery-method" required>
+                        <datalist id="delivery-options">
+                            <option value="Morning">
+                            <option value="Afternoon">
+                            <option value="Special request">
+                            <option value="I would like to collect">                        
+                        </datalist>
+                        <br>
+                        <label for="special-delivery" class="delivery-note">Special Request note: <br></label>
+                        <textarea name="Special-delivery" id="special-delivery" cols="30" rows="5" maxlength="200" placeholder="Place notes here"></textarea>
+                        
+                </div> 
+
+                <p>Please select which of the following local products would interest you?</p>
+                <div>
+                    <input type="checkbox" id="free-range-eggs" name="eggs">
+                    <label for="free-range-eggs">Free range eggs</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="chutney" name="fruit-chutney">
+                    <label for="chutney">Boyne Valley Chutneys</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bread" name="gluten-free-bread">
+                    <label for="bread">Handmade gluten free bread</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="goats-milk" name="goats-milk">
+                    <label for="goats-milk">Goats Milk</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plant-based-milk" name="alternative-milk">
+                    <label for="plant-based-milk">plant based milk</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sauce" name="sauce-variety">
+                    <label for="sauce">Variety of sauces</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="seasoning" name="seasoning-variety">
+                    <label for="seasoning">Variety of seasonings</label>
+                </div>	
+            </fieldset>
+                
+
+                
+    
+            
+        
+    
+        </form>
     </div>
     
     
