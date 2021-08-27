@@ -333,7 +333,7 @@ products styles below
     z-index: 2;
 }
 
-new-section div img{
+/* new-section div img{
     width: 80%;
     height: 80%;
     margin: 8% 0 0 5%;
@@ -342,9 +342,9 @@ new-section div img{
     overflow: hidden;
     /* position: absolute;
     top: 0;
-    left: 0; */
-    
-}
+    left: 0; 
+}*/
+
 .new-section div p{
     width: 43%;
     height: auto;
@@ -372,6 +372,14 @@ new-section div img{
     /* position: absolute; */
     
 }
+
+
+
+.meat-type-heading span{
+    width: 30%;
+    height: 2rem;
+    float: left;
+}
 hr{
     width: 100%;
     height: 2px;
@@ -379,7 +387,7 @@ hr{
     background-color:white;
     margin: 5% 5% 5% 14%;
 }
-lamb-image-2 {
+/* lamb-image-2 {
     width: 20%;
     height:67%;
     border: 5px solid black;
@@ -400,7 +408,7 @@ lamb-image-2{
     position:absolute;
     top: 1%;
     right: 1%;    
-}
+} */
 .animal-pic img{
     width: 30%;
     height: 30%;
@@ -415,11 +423,7 @@ lamb-image-2{
     margin: 20% 0 0 2%;   
 }
 
-#lamb-heading span{
-    width: 30%;
-    height: 2rem;
-    float: left;
-}
+
 .lamb-2{
     text-align: center;
     display:-webkit-inline-box;
@@ -427,12 +431,19 @@ lamb-image-2{
     
 }
 
-.lamb-description-2{
+/* .lamb-description-2{
     width: 2rem;
     height: 2rem;
     background-color: yellow;
     z-index: 2;
-}
+} */
+
+
+
+
+
+
+
 section h2{
     margin: 1%;
 }

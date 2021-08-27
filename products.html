@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/stylesheet.css">
         <title>Foley's Butchers Duleek</title>
     </head>
 <body>
@@ -32,20 +32,17 @@
                         https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar-->
                     <li><a href="index.html" class="dropbtn">Home</a></li>
                     <li class="dropdown">
-                        <a href="products-and-about.html" class="dropbtn">Products and about-us</a>
+                        <a href="products.html" class="dropbtn active">Products</a>
                         <div class="dropdown-content">
-                            <a href="products-and-about.html#lamb-section">Lamb</a>
-                            <a href="products-and-about.html#poultry-section">Poultry</a>                     
-                            <a href="products-and-about.html#beef-section">Beef</a>
-                            <a href="products-and-about.html#pork-section">Pork</a>
+                            <a href="products.html#lamb">Lamb</a>
+                            <a href="products.html#poultry">Poultry</a>                     
+                            <a href="products.html#beef">Beef</a>
+                            <a href="products.html#pork">Pork</a>
                         </div>
                     </li>
+                    <li><a href="about-us.html" class="dropbtn">About us</a></li>
                     <li class="dropdown">
-                        <a href="rewards.html" class="dropbtn active">Rewards and Contact-us</a>
-                        <div class="dropdown-content">
-                            <a href="rewards.html#rewards-section">Rewards</a>
-                            <a href="rewards.html#contact-section">Contact us</a>
-                        </div>
+                        <a href="rewards.html" class="dropbtn">Rewards</a>
                     </li>
                     <li><a href="contact-us.html" class="dropbtn">Contact-us</a></li>              
                 </ul>        
@@ -53,7 +50,7 @@
         </div>       
     </header> 
     <section >
-        <h2 >We believe that every 
+        <h2 class="natural">We believe that every 
             animal should have the opportunity where possible to explore its own natural 
             environment and live a happy and healthy life as close to nature as possible. 
             We carefully select our partner farmers ensuring the highest quality produce to you.
@@ -61,154 +58,102 @@
         <h2> 
     </section>
     <!--lamb-section-->
-    <section>
-        <div class="meat-type-heading">
-            <section >                                
-                <div id="lamb-heading">
-                    <span><hr></span>
-                    <span><h2 class="lamb-2"> Organic farmed lamb</h2></span>
-                    <span><hr></span>
-                </div>
-            </section>            
+    <section id="lamb">
+        <div class="meat-type-heading" >
+            <span><hr></span>
+            <span><h2 class="product-heading"> Organic farmed lamb</h2></span>
+            <span><hr></span>
         </div>
     </section>
-    <section class="new-section">
-        <div>
-            <span id="meat-cuts-left">
-                <img src="assets/images/lamb-cuts.jpeg" alt="illustration showing cuts of lamb on the carcass">
-            </span>            
+    <section class="product-outer">
+        <div class="meat-cuts-left">
+            <img src="assets/images/lamb-cuts.jpeg" alt="illustration showing cuts of lamb on the carcass">
         </div>
-        <div>
-            <span id="lamb-description-23">
-                <p>
-                    We source the finest mountain reared lamb from our specially selected partner farmers who rear 
-                    grass fed sheep from the Mountain ranges in Mayo and Galway which results in the most tender of 
-                    meats at the lowest of prices.
-                </p>
-            </span>
+        <div> 
+            <p>
+                We source the finest mountain reared lamb from our specially selected partner farmers who rear 
+                grass fed sheep from the Mountain ranges in Mayo and Galway which results in the most tender of 
+                meats at the lowest of prices.
+            </p>
         </div>
-        <div>
-            <span id="animal-pic-right">
-                <img src="assets/images/sheep.jpeg" alt="image of sheep in a field">
-            </span>
+        <div class="animal-pic-right">
+            <img src="assets/images/sheep.jpeg" alt="image of sheep in a field">
         </div>
     </section>
 
-    <!-- chicken section -->
-    <section>
+    <!-- poultry section -->
+    <section id="poultry">
         <div class="meat-type-heading">
-            <section >                                
-                <div id="lamb-heading">
-                    <span><hr></span>
-                    <span><h2 class="lamb-2"> Organic Poultry</h2></span>
-                    <span><hr></span>
-                </div>
-            </section>            
+            <span><hr></span>
+            <span><h2 class="product-heading"> Organic Poultry</h2></span>
+            <span><hr></span>
         </div>
     </section>
-    <section class="new-section">
-        <div >
-            <span >
-                <span id="animal-pic-left">
-                    <img src="assets/images/chickens.jpeg" alt="image of sheep in a field">
-                </span>
-            </span>            
+    <section class="product-outer">
+        <div class="animal-pic-left">
+            <img src="assets/images/chickens.jpeg" alt="image of sheep in a field">
         </div>
-        <div >
-            <span >
-                <span id="lamb-description-23">
-                    <p class="left">
-                        All our poultry is of the highest standards in organic farming and we are very proud of our farmers 
-                    and of the hard work they do to bring the finest quality poultry to our shop. The majority of our partner 
-                    farmers are found in the traditional poultry farming areas of counties Cavan & Monaghan as well as counties 
-                    Meath, Louth, Limerick & Waterford.
-                    </p>
-                </span>
-            </span>
+        <div>
+            <p class="left">
+                All our poultry is of the highest standards in organic farming and we are very proud of our farmers 
+                and of the hard work they do to bring the finest quality poultry to our shop. The majority of our partner 
+                farmers are found in the traditional poultry farming areas of counties Cavan & Monaghan as well as counties 
+                Meath, Louth, Limerick & Waterford.
+            </p>
         </div>
-        <div >
-            <span >
-                <span id="meat-cuts-right">
-                    <img src="assets/images/chicken-cuts.jpeg" alt="illustration showing cuts of chicken on the carcass">
-                </span>
-            </span>
+        <div class="meat-cuts-right">
+            <img src="assets/images/chicken-cuts.jpeg" alt="illustration showing cuts of chicken on the carcass">
         </div>
     </section>
     <!-- beef section-->
-    <section>
+    <section id="beef">
         <div class="meat-type-heading">
-            <section >                                
-                <div id="lamb-heading">
-                    <span><hr class="lamb-hr-left-2"></span>
-                    <span><h2 class="lamb-2"> Organic beef</h2></span>
-                    <span><hr class="lamb-hr-right-2"></span>
-                </div>
-            </section>            
+            <span><hr></span>
+            <span><h2 class="product-heading"> Organic beef</h2></span>
+            <span><hr></span>
         </div>
     </section>
 
-    <section class="new-section">
-        <div>
-            <span id="meat-cuts-left">
-                <img src="assets/images/beef-cuts.png" alt="illustration showing cuts of beef on the carcass">
-            </span>            
+    <section class="product-outer">
+        <div class="meat-cuts-left">
+            <img src="assets/images/beef-cuts.png" alt="illustration showing cuts of beef on the carcass">
         </div>
         <div>
-            <span id="lamb-description-23">
-                <p>
-                    Our beef is renowned for its quality and delicious flavor. The way we guarantee the highest quality in beef in
-                    both texture and flavor is by choosing Irish beef and the highest grade of traditional breeds of cattle. 
-                    Our cattle are chosen on the basis of fat content, marbling and quality to ensure a consistency of flavour. 
-                    All the beef from our butchers is completely grass fed and is matured for a minimum of 28 days to intensify 
-                    beef flavour and tenderness. 
-                </p>
-            </span>
+            <p>
+                Our beef is renowned for its quality and delicious flavor. The way we guarantee the highest quality in beef in
+                both texture and flavor is by choosing Irish beef and the highest grade of traditional breeds of cattle. 
+                Our cattle are chosen on the basis of fat content, marbling and quality to ensure a consistency of flavour. 
+                All the beef from our butchers is completely grass fed and is matured for a minimum of 28 days to intensify 
+                beef flavour and tenderness. 
+            </p>
         </div>
-        <div>
-            <span id="animal-pic-right">
-                <img src="assets/images/cows.jpeg" alt="image of cows in a field">
-            </span>
+        <div class="animal-pic-right">
+            <img src="assets/images/cows.jpeg" alt="image of cows in a field">
         </div>
     </section>
     <!-- Pork section-->
-    <section>
+    <section id="pork">
         <div class="meat-type-heading">
-            <section >                                
-                <div id="lamb-heading">
-                    <span><hr></span>
-                    <span><h2 class="lamb-2"> Organic Pork </h2></span>
-                    <span><hr></span>
-                </div>
-            </section>            
+            <span><hr></span>
+            <span><h2 class="product-heading"> Organic Pork </h2></span>
+            <span><hr></span>      
         </div>
     </section>    
-    <section class="new-section">
-        <div>
-            <span >
-                <span id="animal-pic-left">
-                    <img src="assets/images/pigs.jpeg" alt="image of sheep in a field">
-                </span>
-            </span>            
+    <section class="product-outer">
+        <div class="animal-pic-left">
+            <img src="assets/images/pigs.jpeg" alt="image of sheep in a field">
         </div>
         <div>
-            <span >
-                <span id="lamb-description-23">
-                    <p class="left">
-                        We source our Freerange Pork From a Free Range Farm in Co. Carlow.
-                        Our partners are passionate about ethical farming and animal welfare which aligns with our core values.
-                        The pigs are free to roam outdoors and they can find shelter in warm, straw bedded huts, and always have
-                        access to fresh vegetation and feed them grain grown right on the farm, 
-                        ensuring high quality and full traceability.
-                    </p>
-                </span>
-            </span>
+            <p class="left">
+                We source our Freerange Pork From a Free Range Farm in Co. Carlow.
+                Our partners are passionate about ethical farming and animal welfare which aligns with our core values.
+                The pigs are free to roam outdoors and they can find shelter in warm, straw bedded huts, and always have
+                access to fresh vegetation and feed them grain grown right on the farm, 
+                ensuring high quality and full traceability.
+            </p>
         </div>
-        <div>
-            <span >
-                <span id="meat-cuts-right">
-                    <img src="assets/images/pork-cuts.jpg" alt="illustration showing cuts of chicken on the carcass">
-                </span>
-            </span>
+        <div class="meat-cuts-right">
+            <img src="assets/images/pork-cuts.jpg" alt="illustration showing cuts of chicken on the carcass">
         </div>
     </section>
 

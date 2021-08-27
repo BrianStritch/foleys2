@@ -10,7 +10,9 @@ body{
     padding: 0;
     border: none;
 }
-
+h1,h2,h3,h4,h5,h6{
+    font-family: Architects Daughter, sans-serif;
+}
 p{
     font-family:roboto, sans-serif ;
 }
@@ -27,7 +29,8 @@ header{
     padding: 0;
     border: none;
     color: white; 
-    min-width: 793px;   
+    min-width: 793px; 
+    position: relative;  
 }
 header p{
     text-align: left;
@@ -51,9 +54,7 @@ header h1{
 .nav-div{
     float: right;
 }
-h1,h2,h3,h4,h5,h6{
-    font-family: Architects Daughter, sans-serif;
-}
+
  
 /* *************************** members area login *********************************/
 #members form{
@@ -67,7 +68,7 @@ h1,h2,h3,h4,h5,h6{
 	padding: 0.2rem;
 	background-color: white;
 	color: blue;
-	border: none;
+	border: 2px solid black;
 	border-radius: 5px;    
 }
 
@@ -195,7 +196,10 @@ footer p{
     padding: 0 0 5px 0;
     color: #fafafa;
     letter-spacing: 100px;
-    text-align: center;    
+    text-align: center;       
+}
+.fab {
+    color: blue;  
 }
 
 /* ************************* end of footer styles *************************** */
@@ -232,10 +236,10 @@ footer p{
     border: none;
     padding: 0;
     margin: 0; 
-    justify-content: space-evenly;
+    justify-content: space-evenly;    
 }
 
-#hero-span-1, #hero-span-2, #hero-span-3{
+#hero-1, #hero-2, #hero-3{
     width: 20%;
     height: 17rem;
     display: inline;
@@ -243,34 +247,161 @@ footer p{
     border: 5px solid blue;
     border-radius: 10%;
     overflow: hidden;
-    box-sizing: border-box;
-    
-    
+    box-sizing: border-box;    
 }
-#hero-span-1{
+#hero-1{
     float: left;
     margin:5% 5% 5% 10%;
 
 }
-#hero-span-1 img{
+#hero-1 img{
     width: 100%;
     height: 100%;
 }
-#hero-span-2{
+#hero-2{
     float: left;
     margin: 5% 5%;
     padding: 1% 2%;
 }
-#hero-span-3{
+#hero-3{
     float: left;
     margin: 5% 10% 5% 5% ;
     padding: 0;
 }
-#hero-span-3 img{
+#hero-3 img{
     width: 100%;
     height: 100%;
     min-width: 203px;
 }
+***************************
+.product-outer-2{
+    width: 100%;
+    height: 19.5rem;
+    background-color: beige;
+    position: relative;
+}
+.pic-left img{
+    width: 16rem;
+    height: 60%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+    position: absolute;
+    top: -20%;
+    left: -4%; 
+    z-index: 0;
+}
+.pic-right img{
+    width: 34rem;
+    height: auto;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -20%;
+    right: 9%; 
+    z-index: 0;
+}
+
+
+
+.hero-section-3{
+    width: 100%;
+    height: 19.5rem;
+    background-color: greenyellow;
+    
+}
+.hero-4 img{
+    width: 30%;
+    height: 78%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -30%;
+    right: 1%;
+    z-index: 0; 
+}
+.hero-5 img{
+    width: 30%;
+    height: 78%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -32%;
+    left: -4%;
+    z-index: 0; 
+}
+.hero-6 img{
+    width: 30%;
+    height: 78%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -32%;
+    left: -20%;
+    z-index: 0; 
+}
+/* .hero-section-3{
+    width: 100%;
+    height: 24rem;    
+    border: none;
+    padding: 0;
+    margin: 0; 
+    justify-content: space-evenly;
+    position: relative;
+} */
+/* .hero-4{    
+    margin:5% 5% 5% 10%;
+    position: absolute;
+    left: 3rem;
+    top: 1rem;
+
+}
+
+.hero-5{
+    
+    margin: 5% 10% 5% 5% ;
+    padding: 0;
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+
+} */
+/* .hero-4 img, .hero-5 img, .hero-6 img{
+    width: 100%;
+    height: 100%;
+    min-width: 203px;
+}
+/* .hero-6{
+    
+    margin: 5% 10% 5% 5% ;
+    padding: 0;
+    position: absolute;
+    right: 24rem;
+    top: 1rem;
+
+} */
+
+/* .hero-4, .hero-5, .hero-6{
+    width: 20%;
+    height: 17rem;
+    display: inline;
+    background-color: white;
+    border: 5px solid blue;
+    border-radius: 10%;
+    overflow: hidden;
+    box-sizing: border-box;    
+} */ */
+
+
 /********************* end of hero image styles ***********************/
 
 
@@ -278,6 +409,125 @@ footer p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *************************** products page styles **************************** */
+.meat-type-heading{
+    width: 100%;
+    height: 3.5rem; 
+    clear: both; 
+    background-color: blue; 
+    color: #fafafa;   
+    z-index: 1;      
+}
+.meat-type-heading span{
+    width: 30%;
+    height: 2rem;
+    float: left;
+}
+hr{
+    width: 100%;
+    height: 2px;
+    color: white;
+    background-color:white;
+    margin: 5% 5% 5% 14%;
+} 
+.product-heading{
+    text-align: center;
+    display:-webkit-inline-box;
+    margin: 2% 0 0 33%;    
+}
+.product-outer{
+    width: 100%;
+    height: 19.5rem;
+    background-color: beige;
+    position: relative;
+}
+.meat-cuts-left img{
+    width: 26%;
+    height: 60%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+    position: absolute;
+    top: -20%;
+    left: -4%; 
+    z-index: 0;
+}
+.meat-cuts-right img{
+    width: 26%;
+    height: 60%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -20%;
+    right: 1%; 
+    z-index: 0;
+}
+.animal-pic-right img{
+    width: 30%;
+    height: 78%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -30%;
+    right: 1%;
+    z-index: 0; 
+}
+.animal-pic-left img{
+    width: 30%;
+    height: 78%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -32%;
+    left: -4%;
+    z-index: 0; 
+}
+.product-outer div p{
+    width: 43%;
+    height: auto;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: -1%;
+    left: 21%;
+    padding: 1%;
+    z-index: 2;
+}
+.product-outer .left{
+    top: -3%;
+    left: 24%;    
+}
+.natural{
+    margin: 1%;
+}
 
 
 /******************************rewards page styles ********************************/
@@ -375,7 +625,7 @@ form div{
 
 
 
-/*     ************************************* end of form styles ************************************/
+/*     ************************************* end of rewards page styles ************************************/
 
 
 
