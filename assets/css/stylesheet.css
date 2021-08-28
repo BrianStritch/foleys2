@@ -410,15 +410,16 @@ footer p{
 
 
 
-.meat-type-heading-2{
+/* .meat-type-heading-2{
     width: 100%;
     height: 3.5rem; 
     clear: both; 
     background-color: blue; 
     color: #fafafa;   
     z-index: 1;
-} 
-/* **************find out why this is needed for products page as wont work without it */
+}  */
+/* **************find out why this is needed for products page as wont work without it , 
+tested again and it does so dont delete me yet*/
 
 
 
@@ -430,6 +431,9 @@ footer p{
 
 
 /* *************************** products page styles **************************** */
+.products-page{
+    background-color: beige;
+}
 .meat-type-heading{
     width: 100%;
     height: 3.5rem; 
