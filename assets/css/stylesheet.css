@@ -527,6 +527,10 @@ hr{
 .natural{
     margin: 1%;
 }
+/* *************************** about-us and gallery page styles ****************** */
+
+
+
 
 
 /******************************rewards page styles ********************************/
@@ -654,11 +658,11 @@ https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lin
   }
   
   .breakpoint {
-    width: Calc(100%/4);
+    width: Calc(100%/5);
   }
   
   .breakpoint:not(:first-child) {
-    border-left: 1px solid green;
+    border-left: 1px solid blue;
   }
   .satisfaction{
     width: 30%;
