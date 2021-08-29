@@ -5,7 +5,7 @@ body{
     font-family: roboto, sans-serif;
     font-weight: 300;
     color: black;
-    background-color: #fafafa;
+    background-color: beige;
     margin: 0;
     padding: 0;
     border: none;
@@ -179,9 +179,11 @@ footer{
     top: 113.5rem;
     height: 2rem;
     
+    
 }
 footer h3{
     text-align: center;
+    color: blue;
 }
 footer p{
     padding: 0 20px 0 0;
@@ -193,7 +195,7 @@ footer p{
 .social-media-links{
     font-size: 250%;
     margin: 1%;
-    padding: 0 0 5px 0;
+    padding: 0 0 0 6%;
     color: #fafafa;
     letter-spacing: 100px;
     text-align: center;       
@@ -201,6 +203,7 @@ footer p{
 .fab {
     color: blue;  
 }
+
 
 /* ************************* end of footer styles *************************** */
 
@@ -212,29 +215,77 @@ footer p{
 #hero-section-1{
     width: 100%;
     height: 26rem;
-    vertical-align: middle;
+    /* vertical-align: middle; */
+    position: relative;
     
 }
-#hero-section-1 div{
+.shop-front{
     width: 60%;
     height: 100%;
     border: 5px groove blue;
     border-radius: 13px;
-    overflow: hidden;
-    margin: 2% 20%;
+    overflow: hidden;    
     min-width: 640px;
-
+    position: absolute;
+    left: 18.5rem;
+    top: 2rem;
 }
-#shop-front img{
+.shop-front img, .bord-bia img, .great-taste-award img, .craft-butcher img, .irish-beef img{
     width: 100%;
     height: 100%;
 }
-
+.bord-bia{
+    width: 10rem;
+    height: 10rem;
+    border: 5px groove blue;
+    border-radius: 13px;
+    overflow: hidden;    
+    position: absolute;
+    left: 4rem;
+    top: 17rem;
+}
+.great-taste-award{
+    width: 10rem;
+    height: 10rem;
+    border: 5px groove blue;
+    border-radius: 13px;
+    overflow: hidden;    
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+}
+.craft-butcher{
+    width: 10rem;
+    height: 10rem;
+    border: 5px groove blue;
+    border-radius: 13px;
+    overflow: hidden;    
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+}
+.irish-beef{
+    width: 10rem;
+    height: 10rem;
+    border: 5px groove blue;
+    border-radius: 13px;
+    overflow: hidden;    
+    position: absolute;
+    right: 4rem;
+    top: 17rem;
+}
+.opening-text{
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 34rem;
+    left: 1rem;
+}
 #hero-section-2{
     width: 100%;
     height: 24rem;    
     border: none;
-    padding: 0;
+    padding: 6rem 0 0 0;
     margin: 0; 
     justify-content: space-evenly;    
 }
@@ -273,6 +324,15 @@ footer p{
     height: 100%;
     min-width: 203px;
 }
+.customer-note{
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 61rem;
+    left: 1rem;
+    z-index: 3;
+    padding: 0  1rem;
+}
 ***************************
 .product-outer-2{
     width: 100%;
@@ -280,126 +340,54 @@ footer p{
     background-color: beige;
     position: relative;
 }
-.pic-left img{
-    width: 16rem;
-    height: 60%;
-    margin: 8% 0 0 5%;
-    border: 5px solid blue;
-    border-radius: 0 40px;
-    overflow: hidden;
-    position: absolute;
-    top: -20%;
-    left: -4%; 
-    z-index: 0;
-}
-.pic-right img{
-    width: 34rem;
-    height: auto;
-    margin: 8% 0 0 5%;
-    border: 5px solid blue;
-    border-radius: 0 40px;
-    overflow: hidden;
-     position: absolute;
-    top: -20%;
-    right: 9%; 
-    z-index: 0;
-}
-
-
-
-.hero-section-3{
+/* product-outer-2 is unused but causes a fault with images on index page, condiments-1 and condiments-2*/
+.in-store-pics{
     width: 100%;
-    height: 19.5rem;
-    background-color: greenyellow;
-    
-}
-.hero-4 img{
-    width: 30%;
-    height: 78%;
-    margin: 8% 0 0 5%;
-    border: 5px solid blue;
-    border-radius: 0 40px;
-    overflow: hidden;
-     position: absolute;
-    top: -30%;
-    right: 1%;
-    z-index: 0; 
-}
-.hero-5 img{
-    width: 30%;
-    height: 78%;
-    margin: 8% 0 0 5%;
-    border: 5px solid blue;
-    border-radius: 0 40px;
-    overflow: hidden;
-     position: absolute;
-    top: -32%;
-    left: -4%;
-    z-index: 0; 
-}
-.hero-6 img{
-    width: 30%;
-    height: 78%;
-    margin: 8% 0 0 5%;
-    border: 5px solid blue;
-    border-radius: 0 40px;
-    overflow: hidden;
-     position: absolute;
-    top: -32%;
-    left: -20%;
-    z-index: 0; 
-}
-/* .hero-section-3{
-    width: 100%;
-    height: 24rem;    
-    border: none;
-    padding: 0;
-    margin: 0; 
-    justify-content: space-evenly;
+    height: 35rem;
+    background-color: beige;
     position: relative;
-} */
-/* .hero-4{    
-    margin:5% 5% 5% 10%;
-    position: absolute;
-    left: 3rem;
-    top: 1rem;
-
+    margin-top: 5rem;
 }
-
-.hero-5{
-    
-    margin: 5% 10% 5% 5% ;
-    padding: 0;
+.condiments-1{
+    width: 35%;
+    height: 25rem;
+    background-color: red;    
     position: absolute;
-    right: 3rem;
-    top: 1rem;
-
-} */
-/* .hero-4 img, .hero-5 img, .hero-6 img{
+    left: 9rem;
+    top: 5rem;
+    border: 5px solid blue;
+    border-radius:  40px;
+    overflow: hidden;
+}
+.condiments-1 img{
     width: 100%;
     height: 100%;
-    min-width: 203px;
 }
-/* .hero-6{
-    
-    margin: 5% 10% 5% 5% ;
-    padding: 0;
+.condiments-2{
+    width: 35%;
+    height: 25rem;
+    background-color: red;   
     position: absolute;
-    right: 24rem;
-    top: 1rem;
-
-} */
-
-/* .hero-4, .hero-5, .hero-6{
-    width: 20%;
-    height: 17rem;
-    display: inline;
-    background-color: white;
+    right: 9rem;
+    top: 5rem;
     border: 5px solid blue;
-    border-radius: 10%;
+    border-radius: 40px ;
     overflow: hidden;
-    box-sizing: border-box;    
-} */ */
+}
+.condiments-2 img{
+    width: 100%;
+    height: 100%;
+}
+.rewards-note{
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 99rem;
+    left: 1rem;
+    z-index: 3;
+    padding: 0  1rem;
+}
+
 
 
 /********************* end of hero image styles ***********************/
@@ -527,14 +515,14 @@ hr{
     background-color: white;
     color: black;
     position: absolute;
-    top: -1%;
-    left: 21%;
+    top: -12%;
+    left: 22.5%;
     padding: 1%;
     z-index: 2;
 }
 .product-outer .left{
-    top: -3%;
-    left: 24%;    
+    top: -10%;
+    left: 22%;    
 }
 .natural{
     margin: 1%;
@@ -543,7 +531,7 @@ hr{
 
 /******************************rewards page styles ********************************/
 /* rewards form */
-
+/* *** references from Coders coffeehouse code institute walkthrough for form layout modified to suit this website ***** */
 #rewards-form-outer{
     width: 50rem;
     height: auto;
@@ -551,7 +539,7 @@ hr{
     background-color: rgb(250, 250, 250);
     position: absolute;
     top: 10rem;
-    left: 26rem;
+    left: 24.5%;
     border-radius: 5px 5px;
 }
 #rewards-form-outer h1{
@@ -571,7 +559,7 @@ fieldset{
 
 /*form styles */
 input[type=submit] {
-	margin-left: 0.75rem;
+	margin: 0 0.75rem 1rem;
 	padding: 0.75rem;
 	background-color: blue;
 	color: white;
@@ -632,11 +620,109 @@ form div{
 }
 .underline{
     text-decoration:underline;
+    margin-left: 1rem;
+}
+.rewards-info{
+    margin: 0 1rem 1rem 1rem;
 }
 
 
 
 /*     ************************************* end of rewards page styles ************************************/
+/* ************** Contact us page ******************************** */
+/* Code below from an answer given to a question on the following site and adjusted for this website
+https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */
+.slider-wrapper {
+    position: relative;
+    width: 150px;
+  }
+  
+  .slider {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .underlay {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+  }
+  
+  .breakpoint {
+    width: Calc(100%/4);
+  }
+  
+  .breakpoint:not(:first-child) {
+    border-left: 1px solid green;
+  }
+  .satisfaction{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    right: 35rem;
+    top: 8rem;
+}
+.find-us{
+    position: absolute;
+    top: 35rem;
+    left: 4rem;
+    font-size: 2.5rem;
+}
 
 
 
+
+
+
+
+
+/*Code below from a google search "how to iframe google map"
+  https://google-map-generator.com/ */
+.mapouter{
+    position:absolute;
+    text-align:right;
+    height:500px;
+    width:600px;
+    top: 43.5rem;
+    left: 2rem;
+    border: 2px solid blue ;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important
+    ;height:500px;
+    width:600px;
+}
+.contact-us-shop-front{
+    width: 600px;
+    height: 500px;
+    border: 2px solid blue;
+    border-radius: 40px;
+    position: absolute;
+    top: 43.5rem;
+    right: 2rem;
+    overflow: hidden;
+}
+.contact-us-shop-front img{
+    width: 100%;
+    height: 100%;
+}
+.contact-us-details{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.queries{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    right: 2rem;
+    top: 8rem;
+}
