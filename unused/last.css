@@ -1,0 +1,347 @@
+
+
+/************** index / home page *******************/
+/* hero image and surrounding images and covers*/
+
+
+/*************************** product-outer 2 not in new sheet and it works   */
+.product-outer-2{
+    width: 100%;
+    height: 19.5rem;
+    background-color: beige;
+    position: relative;
+}
+/* product-outer-2 is unused but causes a fault with images on index page, condiments-1 and condiments-2*/
+
+
+/********************* end of hero image styles ***********************/
+
+
+
+
+
+
+
+/* .meat-type-heading-2{
+    width: 100%;
+    height: 3.5rem; 
+    clear: both; 
+    background-color: blue; 
+    color: #fafafa;   
+    z-index: 1;
+}  */
+/* **************find out why this is needed for products page as wont work without it , 
+tested again and it does so dont delete me yet*/
+
+
+
+
+
+
+
+
+
+
+/* *************************** products page styles **************************** */
+.products-page{
+    background-color: beige;
+}
+.meat-type-heading{
+    width: 100%;
+    height: 3.5rem; 
+    clear: both; 
+    background-color: blue; 
+    color: #fafafa;   
+    z-index: 1;
+}
+
+/* .meat-type-heading span{
+    width: 30%;
+    height: 2rem;
+    float: left;
+    
+} */
+
+hr{
+    width: 100%;
+    height: 2px;
+    color: white;
+    background-color:white;
+    margin: 5% 5% 5% 14%;
+    
+} 
+.product-heading{
+    text-align: center;
+    display:-webkit-inline-box;
+    margin: 2% 0 0 33%;    
+}
+.product-outer{
+    width: 100%;
+    height: 19.5rem;
+    background-color: beige;
+    position: relative;
+}
+.meat-cuts-left img{
+    width: 26%;
+    height: 60%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+    position: absolute;
+    top: -20%;
+    left: -4%; 
+    z-index: 0;
+}
+.meat-cuts-right img{
+    width: 26%;
+    height: 60%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -20%;
+    right: 1%; 
+    z-index: 0;
+}
+.animal-pic-right img{
+    width: 30%;
+    height: 78%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -30%;
+    right: 1%;
+    z-index: 0; 
+}
+.animal-pic-left img{
+    width: 30%;
+    height: 78%;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 0 40px;
+    overflow: hidden;
+     position: absolute;
+    top: -32%;
+    left: -4%;
+    z-index: 0; 
+}
+.product-outer div p{
+    width: 43%;
+    height: auto;
+    margin: 8% 0 0 5%;
+    border: 5px solid blue;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: -12%;
+    left: 22.5%;
+    padding: 1%;
+    z-index: 2;
+}
+.product-outer .left{
+    top: -10%;
+    left: 22%;    
+}
+.natural{
+    margin: 1%;
+}
+/* *************************** about-us and gallery page styles ****************** */
+
+
+
+/******************************rewards page styles ********************************/
+/* rewards form */
+/* *** references from Coders coffeehouse code institute walkthrough for form layout modified to suit this website ***** */
+#rewards-form-outer{
+    width: 50rem;
+    height: auto;
+    border: 2px double black;
+    background-color: rgb(250, 250, 250);
+    position: absolute;
+    top: 10rem;
+    left: 24.5%;
+    border-radius: 5px 5px;
+}
+#rewards-form-outer h1{
+    text-align: center;
+}
+.user-data{
+    margin-bottom: 1rem;
+    
+}
+fieldset{
+    border:2px solid blue;
+}
+#rewards-page{
+    background-color: white;
+    
+}
+
+/*form styles */
+input[type=submit] {
+	margin: 0 0.75rem 1rem;
+	padding: 0.75rem;
+	background-color: blue;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+form {
+	width: 50rem;
+}
+
+legend {
+	font-size: large;
+	font-weight: 600;
+	text-transform: uppercase;
+    font-family: Architects Daughter, sans-serif;
+}
+.personal-details, .address{
+    width: 302px;
+    height: 152px;
+    
+}
+.personal-details div input {
+    float:right;
+}
+
+.address div input {
+    float:right;
+}
+fieldset span{
+    display: inline-block;
+    padding: 0 1.5rem;
+}
+input{
+    padding: 0 0.5rem;
+    margin: 0;
+}
+label{
+    padding: 0 0.5rem 0 0;
+}
+form div{
+    display: table-row;
+    
+}
+.fav-meat{
+    padding: 0 2.9rem 0 0;
+}
+.least-fav-meat{
+    padding: 0 0.5rem 0 0;
+}
+#special-delivery{
+    width: 26.8rem;
+    height: auto;
+    
+}
+.delivery-note{
+    padding: 0 1.55rem 0 0;
+}
+.underline{
+    text-decoration:underline;
+    margin-left: 1rem;
+}
+.rewards-info{
+    margin: 0 1rem 1rem 1rem;
+}
+
+
+
+/*     ************************************* end of rewards page styles ************************************/
+/* ************** Contact us page ******************************** */
+/* Code below from an answer given to a question on the following site and adjusted for this website
+https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lines-in-on-the-horizontal-line */
+.slider-wrapper {
+    position: relative;
+    width: 150px;
+  }
+  
+  .slider {
+    width: 150px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .underlay {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+  }
+  
+  .breakpoint {
+    width: Calc(100%/5);
+  }
+  
+  .breakpoint:not(:first-child) {
+    border-left: 1px solid blue;
+  }
+  .satisfaction{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    right: 35rem;
+    top: 8rem;
+}
+.find-us{
+    position: absolute;
+    top: 35rem;
+    left: 4rem;
+    font-size: 2.5rem;
+}
+
+/*Code below from a google search "how to iframe google map"
+  https://google-map-generator.com/ */
+.mapouter{
+    position:absolute;
+    text-align:right;
+    height:500px;
+    width:600px;
+    top: 43.5rem;
+    left: 2rem;
+    border: 2px solid blue ;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important
+    ;height:500px;
+    width:600px;
+}
+.contact-us-shop-front{
+    width: 600px;
+    height: 500px;
+    border: 2px solid blue;
+    border-radius: 40px;
+    position: absolute;
+    top: 43.5rem;
+    right: 2rem;
+    overflow: hidden;
+}
+.contact-us-shop-front img{
+    width: 100%;
+    height: 100%;
+}
+.contact-us-details{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+.queries{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    right: 2rem;
+    top: 8rem;
+}

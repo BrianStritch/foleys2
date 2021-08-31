@@ -30,7 +30,8 @@ header{
     border: none;
     color: white; 
     min-width: 793px; 
-    position: relative;  
+    position: relative;
+    z-index: 8;  
 }
 header p{
     text-align: left;
@@ -723,3 +724,45 @@ https://stackoverflow.com/questions/49546104/input-range-make-small-vertical-lin
     right: 2rem;
     top: 8rem;
 }
+
+
+
+/* testing for burger menu */
+.topnav {
+    background-color: blue;
+    position: fixed;
+    right: 45px;
+    top: 63px;
+    z-index: 4;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: blue;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: blue;
+    color: white;
+  }
+ /* set z index to 8 for header and this will work */
