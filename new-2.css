@@ -1,3 +1,51 @@
+
+header{	
+    width: 100%;	
+    height: 150px;	
+    background-color: #05274b;	
+    position: relative;	
+    text-align: center;
+    z-index: 8; 
+    }
+header h1{
+    font-size: 2.8rem;
+    position: absolute;
+    left: 1rem;
+    top: -1.5rem;
+}
+header p{
+    text-align: left;
+    position: absolute;
+    left: 2%;
+    top: 4rem;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid white;
+    font-family: Architects Daughter, sans-serif;
+}
+.foley-name{
+    float: left;
+}
+.nav-div{
+    float: right;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 600px){	
     body{	
     padding: 0;	
